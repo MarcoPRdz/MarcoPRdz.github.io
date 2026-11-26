@@ -1,1 +1,141 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cantos de JPSA</title><style>:root{--bg-color:#f4f6f9;--card-bg:#ffffff;--text-main:#1e293b;--text-muted:#64748b;--primary:#2563eb;--primary-hover:#1d4ed8;--badge-bg:#e0e7ff;--badge-text:#1e40af;--border-color:#e2e8f0;--shadow:0 4px 6px -1px rgba(0,0,0,.07),0 2px 4px -2px rgba(0,0,0,.05);--btn-secondary-bg:#f1f5f9;--btn-secondary-text:#334155;--btn-secondary-hover:#e2e8f0}body.dark-mode{--bg-color:#0f172a;--card-bg:#1e293b;--text-main:#f8fafc;--text-muted:#94a3b8;--primary:#3b82f6;--primary-hover:#60a5fa;--badge-bg:#1e3a8a;--badge-text:#93c5fd;--border-color:#334155;--shadow:0 4px 6px -1px rgba(0,0,0,.3);--btn-secondary-bg:#334155;--btn-secondary-text:#f1f5f9;--btn-secondary-hover:#475569}*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background-color:var(--bg-color);color:var(--text-main);line-height:1.6;transition:background-color .25s ease,color .25s ease;padding-bottom:40px}header{background-color:var(--card-bg);border-bottom:1px solid var(--border-color);padding:16px 20px;position:sticky;top:0;z-index:100;box-shadow:0 1px 3px rgba(0,0,0,.05)}.header-container{max-width:800px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}h1{font-size:1.4rem;font-weight:700;display:flex;align-items:center;gap:8px}.theme-btn{background:var(--btn-secondary-bg);color:var(--btn-secondary-text);border:1px solid var(--border-color);padding:8px 14px;border-radius:20px;font-size:.9rem;font-weight:600;cursor:pointer;transition:all .2s}.theme-btn:hover{background:var(--btn-secondary-hover)}main{max-width:800px;margin:0 auto;padding:20px}.search-container{margin-bottom:24px}.search-input{width:100%;padding:16px 20px;font-size:1.1rem;border:2px solid var(--border-color);border-radius:14px;background-color:var(--card-bg);color:var(--text-main);box-shadow:var(--shadow);outline:none;transition:border-color .2s}.search-input:focus{border-color:var(--primary)}.search-input::placeholder{color:var(--text-muted)}.song-list{display:flex;flex-direction:column;gap:14px}.song-card{background-color:var(--card-bg);border:1px solid var(--border-color);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center;gap:16px;transition:transform .15s ease}.song-card:hover{transform:translateY(-2px)}.song-info{display:flex;flex-direction:column;gap:6px}.song-title{font-size:1.15rem;font-weight:700}.song-badge{display:inline-block;background-color:var(--badge-bg);color:var(--badge-text);font-size:.8rem;font-weight:700;padding:3px 10px;border-radius:12px;width:fit-content;text-transform:uppercase;letter-spacing:.5px}.btn-primary{background-color:var(--primary);color:#fff;border:none;padding:10px 18px;border-radius:10px;font-size:.95rem;font-weight:600;cursor:pointer;white-space:nowrap;transition:background-color .2s}.btn-primary:hover{background-color:var(--primary-hover)}.detail-view{display:none}.detail-view.active{display:block}.controls-bar{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;margin-bottom:20px;background-color:var(--card-bg);padding:12px 16px;border-radius:14px;border:1px solid var(--border-color);box-shadow:var(--shadow)}.controls-group{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.btn-control{background-color:var(--btn-secondary-bg);color:var(--btn-secondary-text);border:1px solid var(--border-color);padding:8px 14px;border-radius:10px;font-size:.9rem;font-weight:600;cursor:pointer;transition:background-color .2s}.btn-control:hover{background-color:var(--btn-secondary-hover)}.btn-font{font-size:1.1rem;padding:6px 14px;font-weight:700}.detail-card{background-color:var(--card-bg);border:1px solid var(--border-color);border-radius:16px;padding:24px;box-shadow:var(--shadow)}.detail-header{margin-bottom:20px;border-bottom:1px solid var(--border-color);padding-bottom:16px}.detail-title{font-size:1.6rem;font-weight:800;margin-top:8px}.video-wrapper{margin-bottom:24px}.video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;background-color:#000}.video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}.no-video-msg{background-color:var(--btn-secondary-bg);color:var(--text-muted);padding:20px;border-radius:12px;text-align:center;font-weight:600;border:1px dashed var(--border-color)}.lyrics-container{font-size:20px;line-height:1.75;white-space:pre-wrap;word-wrap:break-word}.chorus-block{font-weight:700;display:block;padding-left:12px;border-left:4px solid var(--primary)}body.lyrics-only-mode header,body.lyrics-only-mode .video-wrapper,body.lyrics-only-mode .hide-in-lyrics-only{display:none!important}body.lyrics-only-mode .detail-card{border:none;box-shadow:none;background:0 0;padding:10px 0}.floating-exit-btn{display:none;position:fixed;bottom:20px;right:20px;background-color:var(--primary);color:#fff;border:none;padding:12px 20px;border-radius:30px;font-size:.95rem;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.3);cursor:pointer;z-index:999}body.lyrics-only-mode .floating-exit-btn{display:block}.status-msg{text-align:center;padding:40px 20px;color:var(--text-muted);font-size:1.1rem}@media(max-width:600px){.song-card{flex-direction:column;align-items:flex-start}.btn-primary{width:100%;text-align:center}.controls-bar{flex-direction:column;align-items:stretch}.controls-group{justify-content:space-between}}@media print{header,.controls-bar,.video-wrapper,.floating-exit-btn{display:none!important}body{background:#fff!important;color:#000!important}.detail-card{box-shadow:none!important;border:none!important}}</style></head><body><header><div class="header-container"><h1>🎵 Cantos de JPSA</h1><button id="themeToggle" class="theme-btn" aria-label="Cambiar tema">🌙 Modo Oscuro</button></div></header><main><section id="listView"><div class="search-container"><input type="search" id="searchInput" class="search-input" placeholder="Buscar por título o frase de la letra..." autocomplete="off"></div><div id="songList" class="song-list"><div class="status-msg">Cargando cantos...</div></div></section><section id="detailView" class="detail-view"><div class="controls-bar hide-in-lyrics-only"><button id="backBtn" class="btn-control">⬅ Volver a la lista</button><div class="controls-group"><button id="decreaseFontBtn" class="btn-control btn-font" title="Disminuir letra">A-</button><button id="increaseFontBtn" class="btn-control btn-font" title="Aumentar letra">A+</button><button id="copyBtn" class="btn-control">📋 Copiar letra</button><button id="lyricsOnlyBtn" class="btn-control">📺 Solo letra</button></div></div><div class="detail-card"><div class="detail-header"><span id="detailType" class="song-badge">Tipo</span><h2 id="detailTitle" class="detail-title">Título del Canto</h2></div><div id="videoWrapper" class="video-wrapper"></div><div id="detailLyrics" class="lyrics-container"></div></div></section></main><button id="exitLyricsOnlyBtn" class="floating-exit-btn">❌ Salir de Solo letra</button><script id="cantos-data" type="application/json">[{"id":1,"titulo":"Madre del Salvador","tipo":"Entrada","youtubeId":"kOBeYZQyoHk","letra":"Pega aquí la letra de \"Madre del Salvador\".\n\nCORO:\nPega aquí la estrofa del coro..."},{"id":2,"titulo":"Madre Tu Eres Ternura","tipo":"Comunión","youtubeId":"bNujFW2E3YA","letra":"Pega aquí la letra de \"Madre Tu Eres Ternura\".\n\nCORO:\nPega aquí la estrofa del coro..."},{"id":3,"titulo":"Mientras Recorres La Vida","tipo":"Salida","youtubeId":"SVwR5Xo4nVg","letra":"Pega aquí la letra de \"Mientras Recorres La Vida\".\n\nCORO:\nPega aquí la estrofa del coro..."},{"id":4,"titulo":"Junto a Ti María","tipo":"Entrada","youtubeId":"jQSiKvAQdtE","letra":"Pega aquí la letra de \"Junto a Ti María\".\n\nCORO:\nPega aquí la estrofa del coro..."},{"id":5,"titulo":"Maria Creo En ti","tipo":"Comunión","youtubeId":"tsyKDxgMsM0","letra":"Pega aquí la letra de \"Maria Creo En ti\".\n\nCORO:\nPega aquí la estrofa del coro..."},{"id":6,"titulo":"Maria Es Esa Mujer","tipo":"Ofertorio","youtubeId":"EEZ9CeQhiEY","letra":"Pega aquí la letra de \"Maria Es Esa Mujer\".\n\nCORO:\nPega aquí la estrofa del coro..."},{"id":7,"titulo":"Bien Aventurada","tipo":"Entrada","youtubeId":"HR8UrKcjHiw","letra":"Pega aquí la letra de \"Bien Aventurada\".\n\nCORO:\nPega aquí la estrofa del coro..."},{"id":8,"titulo":"Buenos Dias Paloma blanca","tipo":"Entrada","youtubeId":"MykN-kfMLYM","letra":"Pega aquí la letra de \"Buenos Dias Paloma blanca\".\n\nCORO:\nPega aquí la estrofa del coro..."},{"id":9,"titulo":"La Guadalupana","tipo":"Salida","youtubeId":"mKWZWm95UBs","letra":"Pega aquí la letra de \"La Guadalupana\".\n\nCORO:\nPega aquí la estrofa del coro..."}]</script><script>let todosLosCantos=[],cantoActual=null,tamanoLetra=20;const listView=document.getElementById("listView"),detailView=document.getElementById("detailView"),songListEl=document.getElementById("songList"),searchInput=document.getElementById("searchInput"),themeToggle=document.getElementById("themeToggle"),cantosDataEl=document.getElementById("cantos-data"),detailType=document.getElementById("detailType"),detailTitle=document.getElementById("detailTitle"),videoWrapper=document.getElementById("videoWrapper"),detailLyrics=document.getElementById("detailLyrics"),backBtn=document.getElementById("backBtn"),increaseFontBtn=document.getElementById("increaseFontBtn"),decreaseFontBtn=document.getElementById("decreaseFontBtn"),copyBtn=document.getElementById("copyBtn"),lyricsOnlyBtn=document.getElementById("lyricsOnlyBtn"),exitLyricsOnlyBtn=document.getElementById("exitLyricsOnlyBtn");function cargarCantos(){try{todosLosCantos=JSON.parse(cantosDataEl.textContent),renderizarLista(todosLosCantos)}catch(e){console.error(e),songListEl.innerHTML='<div class="status-msg">⚠️ Error al leer los datos de cantos.<br><small>Revisa que no falten comas o comillas en el bloque JSON.</small></div>'}}function renderizarLista(e){if(0===e.length)return void(songListEl.innerHTML='<div class="status-msg">No se encontraron cantos con esa búsqueda.</div>');songListEl.innerHTML="",e.forEach(e=>{const t=document.createElement("article");t.className="song-card",t.innerHTML=`<div class="song-info"><span class="song-badge">${escaparHTML(e.tipo)}</span><h2 class="song-title">${escaparHTML(e.titulo)}</h2></div><button class="btn-primary" onclick="abrirCanto(${e.id})">Ver letra</button>`,songListEl.appendChild(t)})}function normalizarTexto(e){return e.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}searchInput.addEventListener("input",e=>{const t=normalizarTexto(e.target.value.trim());if(!t)return void renderizarLista(todosLosCantos);const n=todosLosCantos.filter(e=>{const n=normalizarTexto(e.titulo),o=normalizarTexto(e.letra),a=normalizarTexto(e.tipo);return n.includes(t)||o.includes(t)||a.includes(t)});renderizarLista(n)});function formatearLetra(e){return e.split(/\n\s*\n/).map(e=>{const t=escaparHTML(e.trim());return/^(coro|estribillo)\b/i.test(t)?`<span class="chorus-block">${t}</span>`:`<span>${t}</span>`}).join("\n\n")}window.abrirCanto=function(e){cantoActual=todosLosCantos.find(t=>t.id===e),cantoActual&&(detailType.textContent=cantoActual.tipo,detailTitle.textContent=cantoActual.titulo,detailLyrics.innerHTML=formatearLetra(cantoActual.letra),detailLyrics.style.fontSize=tamanoLetra+"px",videoWrapper.innerHTML=cantoActual.youtubeId&&cantoActual.youtubeId.trim()?`<div class="video-container"><iframe src="https://www.youtube.com/embed/${encodeURIComponent(cantoActual.youtubeId.trim())}" title="${escaparHTML(cantoActual.titulo)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`:'<div class="no-video-msg">Sin video agregado todavía</div>',listView.style.display="none",detailView.classList.add("active"),window.scrollTo({top:0,behavior:"smooth"}))},backBtn.addEventListener("click",()=>{videoWrapper.innerHTML="",detailView.classList.remove("active"),listView.style.display="block",cantoActual=null}),increaseFontBtn.addEventListener("click",()=>{tamanoLetra<42&&(tamanoLetra+=2,detailLyrics.style.fontSize=tamanoLetra+"px")}),decreaseFontBtn.addEventListener("click",()=>{tamanoLetra>14&&(tamanoLetra-=2,detailLyrics.style.fontSize=tamanoLetra+"px")}),copyBtn.addEventListener("click",async()=>{if(!cantoActual)return;const e=`${cantoActual.titulo} (${cantoActual.tipo})\n\n${cantoActual.letra}`;try{await navigator.clipboard.writeText(e);const t=copyBtn.textContent;copyBtn.textContent="✅ ¡Copiada!",setTimeout(()=>{copyBtn.textContent=t},2e3)}catch(e){alert("No se pudo copiar la letra automáticamente.")}}),lyricsOnlyBtn.addEventListener("click",()=>{document.body.classList.add("lyrics-only-mode"),window.scrollTo({top:0,behavior:"smooth"})}),exitLyricsOnlyBtn.addEventListener("click",()=>{document.body.classList.remove("lyrics-only-mode")});function aplicarTemaGuardado(){"true"===localStorage.getItem("coroDarkMode")&&(document.body.classList.add("dark-mode"),themeToggle.textContent="☀️ Modo Claro")}themeToggle.addEventListener("click",()=>{const e=document.body.classList.toggle("dark-mode");localStorage.setItem("coroDarkMode",e),themeToggle.textContent=e?"☀️ Modo Claro":"🌙 Modo Oscuro"});function escaparHTML(e){const t=document.createElement("div");return t.textContent=e,t.innerHTML}aplicarTemaGuardado(),cargarCantos();</script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cantos JPSA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <div class="header-container">
+      <h1>🎵 Cantos JPSA</h1>
+      <button id="themeToggle" class="theme-btn" aria-label="Cambiar tema">🌙 Modo Oscuro</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- VISTA 1: LISTA Y BUSCADOR -->
+    <section id="listView">
+      <div class="search-container">
+        <input 
+          type="search" 
+          id="searchInput" 
+          class="search-input" 
+          placeholder="Buscar por título o frase de la letra..."
+          autocomplete="off"
+        >
+      </div>
+
+      <div id="songList" class="song-list">
+        <div class="status-msg">Cargando cantos...</div>
+      </div>
+    </section>
+
+    <!-- VISTA 2: DETALLE DEL CANTO -->
+    <section id="detailView" class="detail-view">
+      <!-- Barra de controles -->
+      <div class="controls-bar hide-in-lyrics-only">
+        <button id="backBtn" class="btn-control">⬅ Volver a la lista</button>
+        
+        <div class="controls-group">
+          <button id="decreaseFontBtn" class="btn-control btn-font" title="Disminuir letra">A-</button>
+          <button id="increaseFontBtn" class="btn-control btn-font" title="Aumentar letra">A+</button>
+          <button id="copyBtn" class="btn-control">📋 Copiar letra</button>
+          <button id="lyricsOnlyBtn" class="btn-control">📺 Solo letra</button>
+        </div>
+      </div>
+
+      <!-- Tarjeta del canto abierto -->
+      <div class="detail-card">
+        <div class="detail-header">
+          <span id="detailType" class="song-badge">Tipo</span>
+          <h2 id="detailTitle" class="detail-title">Título del Canto</h2>
+        </div>
+
+        <!-- Reproductor de YouTube -->
+        <div id="videoWrapper" class="video-wrapper"></div>
+
+        <!-- Letra formateada -->
+        <div id="detailLyrics" class="lyrics-container"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botón flotante para salir del modo "Solo letra" -->
+  <button id="exitLyricsOnlyBtn" class="floating-exit-btn">❌ Salir de Solo letra</button>
+
+  <!-- DATOS JSON INTEGRADOS: Edita aquí tus cantos (titulo, tipo, youtubeId, letra) -->
+  <script id="cantos-data" type="application/json">
+  [
+    {
+      "id": 1,
+      "titulo": "Madre del Salvador",
+      "tipo": "Entrada",
+      "youtubeId": "kOBeYZQyoHk",
+      "letra": "Pega aquí la letra de \"Madre del Salvador\".\n\nCORO:\nPega aquí la estrofa del coro..."
+    },
+    {
+      "id": 2,
+      "titulo": "Madre Tu Eres Ternura",
+      "tipo": "Comunión",
+      "youtubeId": "bNujFW2E3YA",
+      "letra": "Pega aquí la letra de \"Madre Tu Eres Ternura\".\n\nCORO:\nPega aquí la estrofa del coro..."
+    },
+    {
+      "id": 3,
+      "titulo": "Mientras Recorres La Vida",
+      "tipo": "Salida",
+      "youtubeId": "SVwR5Xo4nVg",
+      "letra": "Pega aquí la letra de \"Mientras Recorres La Vida\".\n\nCORO:\nPega aquí la estrofa del coro..."
+    },
+    {
+      "id": 4,
+      "titulo": "Junto a Ti María",
+      "tipo": "Entrada",
+      "youtubeId": "jQSiKvAQdtE",
+      "letra": "Pega aquí la letra de \"Junto a Ti María\".\n\nCORO:\nPega aquí la estrofa del coro..."
+    },
+    {
+      "id": 5,
+      "titulo": "Maria Creo En ti",
+      "tipo": "Comunión",
+      "youtubeId": "tsyKDxgMsM0",
+      "letra": "Pega aquí la letra de \"Maria Creo En ti\".\n\nCORO:\nPega aquí la estrofa del coro..."
+    },
+    {
+      "id": 6,
+      "titulo": "Maria Es Esa Mujer",
+      "tipo": "Ofertorio",
+      "youtubeId": "EEZ9CeQhiEY",
+      "letra": "Pega aquí la letra de \"Maria Es Esa Mujer\".\n\nCORO:\nPega aquí la estrofa del coro..."
+    },
+    {
+      "id": 7,
+      "titulo": "Bien Aventurada",
+      "tipo": "Entrada",
+      "youtubeId": "HR8UrKcjHiw",
+      "letra": "Pega aquí la letra de \"Bien Aventurada\".\n\nCORO:\nPega aquí la estrofa del coro..."
+    },
+    {
+      "id": 8,
+      "titulo": "Buenos Dias Paloma blanca",
+      "tipo": "Entrada",
+      "youtubeId": "MykN-kfMLYM",
+      "letra": "Pega aquí la letra de \"Buenos Dias Paloma blanca\".\n\nCORO:\nPega aquí la estrofa del coro..."
+    },
+    {
+      "id": 9,
+      "titulo": "La Guadalupana",
+      "tipo": "Salida",
+      "youtubeId": "mKWZWm95UBs",
+      "letra": "Pega aquí la letra de \"La Guadalupana\".\n\nCORO:\nPega aquí la estrofa del coro..."
+    }
+  ]
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>
